@@ -38,7 +38,7 @@ case $opc in
 		cat > archivo-$NOM.txt
 		ls -l;;
 	4)
-		echo "Vamonos";
+		echo "Vamonos desde la laptwin";
 		exit;;
   	*)
     	echo "Opcion erronea, vamos a salir del script";
