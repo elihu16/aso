@@ -6,12 +6,12 @@ NOM=$1
 existe=$(grep -c '^$NOM:' /etc/passwd)
 
 if [ $existe -eq 0 ]; then
-    echo "The user $NOM exists"
+    echo "El usuario $NOM existe"
     echo ""
 cat /etc/passwd | grep $NOM
 else
-    echo "The user $NOM does not exist"
-    echo ""
+    echo "El usuario $NOM no existe"
+    exit
 fi
 
 echo "Menu del usuario: $NOM"
@@ -20,10 +20,11 @@ echo "2) Generar carpeta"
 echo "3) Generar archivo"
 echo "4) salir"
 echo "Ingresa tu opcion: "
+
 read opc
 case $opc in
 	1)
-    		echo "ver directorio del Usuario" ;
+    	echo "ver directorio del Usuario" ;
 		cd /home/$NOM
 		ls -l;;
  	2)
@@ -34,12 +35,13 @@ case $opc in
 	3)
 		echo "Generar archivo";
 		cd /home/$NOM;
-		cat > archivo-elihu.txt
+		cat > archivo-$NOM.txt
 		ls -l;;
 	4)
 		exit;;
   	*)
-    		echo "Opcion erronea";;
+    	echo "Opcion erronea";
+		exit;;
 esac 
 
 
