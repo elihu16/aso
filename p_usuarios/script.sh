@@ -38,7 +38,7 @@ case $opc in
 		cat > archivo-$NOM.txt
 		ls -l;;
 	4)
-		echo "Vamonos desde VB";
+		echo "Vamonos desde VB_debian";
 		exit;;
   	*)
     	echo "Opcion erronea, vamos a salir del script";
