@@ -40,8 +40,8 @@ case $opc in
 	4)
 		exit;;
   	*)
-    	echo "Opcion erronea";
-		exit;;
+    	echo "Opcion erronea, vamos a salir del script";
+	exit;;
 esac 
 
 
