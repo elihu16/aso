@@ -24,25 +24,25 @@ echo "Ingresa tu opcion: "
 read opc
 case $opc in
 	1)
-    	echo "ver directorio del Usuario" ;
+    	echo "ver directorio del Usuario"
 		cd /home/$NOM
 		ls -l;;
  	2)
-		echo "Generar carpeta" ;
+		echo "Generar carpeta"
 		cd /home/$NOM
-		mkdir carpeta.$NOM;
+		mkdir carpeta.$NOM
 		ls -l;;
 	3)
-		echo "Generar archivo";
-		cd /home/$NOM;
+		echo "Generar archivo"
+		cd /home/$NOM
 		cat > archivo-$NOM.txt
 		ls -l;;
 	4)
-		echo "Vamonos desde VB_debian";
+		echo "Vamonos"
 		exit;;
   	*)
-    	echo "Opcion erronea, vamos a salir del script";
-	exit;;
+    	echo "Opcion erronea, vamos a salir del script"
+		exit;;
 esac 
 
 
