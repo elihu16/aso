@@ -43,6 +43,4 @@ case $opc in
   	*)
     	echo "Opcion erronea, vamos a salir del script"
 		exit;;
-esac 
-
-
+esac
