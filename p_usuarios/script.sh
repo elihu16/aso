@@ -14,7 +14,7 @@ else
     exit
 fi
 
-echo "Menu del usuario: $NOM"
+echo "Menu de: $NOM"
 echo "1) Ver directorio del Usuario"
 echo "2) Generar carpeta"
 echo "3) Generar archivo"
