@@ -38,9 +38,9 @@ case $opc in
 		cat > archivo-$NOM.txt
 		ls -l;;
 	4)
-		echo "Vamonos"
+		echo "Amonos"
 		exit;;
   	*)
-    	echo "Opcion erronea, vamos a salir del script"
+    	echo "Opción erronea, vamos a salir del script"
 		exit;;
 esac
