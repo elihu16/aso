@@ -1,18 +1,28 @@
 #!/bin/sh
 NOM=$1
-
-#cat /etc/passwd | grep $NOM
-
-existe=$(grep -c '^$NOM:' /etc/passwd)
-
-if [ $existe -eq 0 ]; then
-    echo "El usuario $NOM existe"
-    echo ""
-cat /etc/passwd | grep $NOM
+echo $NOM
+echo ${NOM}
+b=""
+echo $b
+c=$(cat /etc/passwd | grep $NOM)
+echo ${c}
+if [ $c = $b ]; then
+	echo "no se encuentra el usaurio"
+	exit
 else
-    echo "El usuario $NOM no existe"
-    exit
-fi
+	echo "funciona"
+
+
+#if
+#existe=$(grep -c '^$NOM:' /etc/passwd)
+#if [ $existe -eq 0 ]; then
+#    echo "El usuario $NOM existe"
+#    echo ""
+#cat /etc/passwd | grep $NOM
+#else
+#    echo "El usuario $NOM no existe"
+#    exit
+#fi
 
 echo "Menu de: $NOM"
 echo "1) Ver directorio del Usuario"
