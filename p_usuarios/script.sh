@@ -11,7 +11,7 @@ if [ $c = $b ]; then
 	exit
 else
 	echo "funciona"
-
+fi
 
 #if
 #existe=$(grep -c '^$NOM:' /etc/passwd)
