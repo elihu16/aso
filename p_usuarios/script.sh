@@ -12,18 +12,6 @@ if [ $c = $b ]; then
 else
 	echo "funciona"
 fi
-
-#if
-#existe=$(grep -c '^$NOM:' /etc/passwd)
-#if [ $existe -eq 0 ]; then
-#    echo "El usuario $NOM existe"
-#    echo ""
-#cat /etc/passwd | grep $NOM
-#else
-#    echo "El usuario $NOM no existe"
-#    exit
-#fi
-
 echo "Menu de: $NOM"
 echo "1) Ver directorio del Usuario"
 echo "2) Generar carpeta"
