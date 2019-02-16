@@ -14,15 +14,15 @@ else
 fi
 	echo "Ingresa el minimo de dias para cambiar la contraseña del usuario"
 	read mid
-	#chage -m $mid
+	chage -m $mid $NOM
 	echo "minimo de dias: "$mid
 	echo "Ingrese el maximo de dias para cambiar la contraseña del usuario"
 	read maxd
-	#chage -M $maxd
+	chage -M $maxd $NOM
 	echo "maximo de dias: "$maxd
 	echo "Advertencia de cambiar la contraseña"
 	read adv
-	#chage -W $adv
+	chage -W $adv $NOM
 	echo "advertencia: " $adv
 
 	chage -l $NOM
