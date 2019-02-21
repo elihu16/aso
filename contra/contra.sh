@@ -1,4 +1,5 @@
 #!/bin/sh
+#comentario de prueba
 NOM=$1
 echo $NOM
 echo ${NOM}
