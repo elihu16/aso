@@ -1,6 +1,10 @@
 #!/bin/sh
 git add .
-echo "mensaje de commit(sin espacios)"
+echo " "
+echo "***********************************"
+echo "**mensaje de commit(sin espacios)**"
+echo "***********************************"
+echo " "
 read msg
 git commit -m $msg
 git push
