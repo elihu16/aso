@@ -1,0 +1,23 @@
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2019-04-23 13:56 CDT
+Nmap scan report for 10.0.2.2
+Host is up (0.0023s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0022s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0021s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 10.0.2.15
+Host is up (0.00057s latency).
+PORT   STATE  SERVICE
+80/tcp closed http
+
+Nmap done: 256 IP addresses (4 hosts up) scanned in 8.08 seconds
